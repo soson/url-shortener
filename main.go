@@ -101,7 +101,7 @@ func ReadURL(w http.ResponseWriter, req *http.Request, ps httprouter.Params) {
 }
 
 func main() {
-	db, _ = sql.Open("mysql", "root:mcintosh@/url_shortener")
+	db, _ = sql.Open("mysql", "user:password@/database")
 	defer db.Close()
 
 	// Validate DSN data:
